@@ -1,0 +1,16 @@
+name = "cloudflare-backend"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2021-10-21"
+
+kv-namespaces = [
+  { binding = "POSTS", id = "78d1307d7648411f897f98c6b62557b0", preview_id = "78d1307d7648411f897f98c6b62557b0"}
+]
+
+[build]
+command = "yarn install && yarn run build"
+[build.upload]
+format = "service-worker"
